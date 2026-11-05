@@ -1,0 +1,175 @@
+{
+  "communities": {
+    "0": [
+      "codebase_readme_minimal_todo_app",
+      "codebase_readme_no_persistence",
+      "codebase_readme_react_memory_session_state",
+      "codebase_readme_vite_react",
+      "codebase_test_report_component_tests",
+      "codebase_test_report_playwright_e2e",
+      "codebase_test_report_static_frontend",
+      "codebase_test_report_test_report",
+      "codebase_test_report_vite_production_build",
+      "frontend_index_html_todo_app_title"
+    ],
+    "1": [
+      "frontend_src_app",
+      "frontend_src_app_app",
+      "frontend_src_app_app_addtask",
+      "frontend_src_app_app_deletetask",
+      "frontend_src_app_app_toggletask",
+      "frontend_src_index",
+      "frontend_src_main",
+      "ref_prop_types",
+      "ref_react",
+      "ref_react_dom"
+    ],
+    "2": [
+      "frontend_package",
+      "frontend_package_name",
+      "frontend_package_private",
+      "frontend_package_type",
+      "frontend_package_version",
+      "ref_jsdom",
+      "ref_vite"
+    ],
+    "3": [
+      "frontend_package_devdependencies",
+      "frontend_package_devdependencies_jsdom",
+      "frontend_package_devdependencies_playwright_test",
+      "frontend_package_devdependencies_testing_library_jest_dom",
+      "frontend_package_devdependencies_testing_library_react",
+      "frontend_package_devdependencies_testing_library_user_event",
+      "frontend_package_devdependencies_vitest"
+    ],
+    "4": [
+      "frontend_e2e_preflight_spec",
+      "frontend_e2e_preflight_spec_captureview",
+      "frontend_e2e_todo_spec",
+      "frontend_playwright_config",
+      "ref_node_fs",
+      "ref_playwright_test"
+    ],
+    "5": [
+      "frontend_package_dependencies",
+      "frontend_package_dependencies_prop_types",
+      "frontend_package_dependencies_react",
+      "frontend_package_dependencies_react_dom",
+      "frontend_package_dependencies_vite",
+      "frontend_package_dependencies_vitejs_plugin_react"
+    ],
+    "6": [
+      "frontend_package_scripts",
+      "frontend_package_scripts_build",
+      "frontend_package_scripts_dev",
+      "frontend_package_scripts_test",
+      "frontend_package_scripts_test_e2e"
+    ],
+    "7": [
+      "frontend_src_app_test",
+      "ref_testing_library_react",
+      "ref_testing_library_user_event"
+    ],
+    "8": [
+      "frontend_vite_config",
+      "ref_vitejs_plugin_react",
+      "ref_vitest"
+    ],
+    "9": [
+      "frontend_src_test_setup",
+      "ref_testing_library_jest_dom"
+    ]
+  },
+  "cohesion": {
+    "0": 0.2,
+    "1": 0.24444444444444444,
+    "2": 0.2857142857142857,
+    "3": 0.2857142857142857,
+    "4": 0.3333333333333333,
+    "5": 0.3333333333333333,
+    "6": 0.4,
+    "7": 0.6666666666666666,
+    "8": 0.6666666666666666,
+    "9": 1.0
+  },
+  "gods": [
+    {
+      "id": "frontend_src_app_app",
+      "label": "App()",
+      "degree": 6
+    },
+    {
+      "id": "frontend_package_scripts",
+      "label": "scripts",
+      "degree": 5
+    },
+    {
+      "id": "ref_playwright_test",
+      "label": "@playwright/test",
+      "degree": 4
+    },
+    {
+      "id": "ref_vitest",
+      "label": "vitest",
+      "degree": 4
+    },
+    {
+      "id": "codebase_test_report_test_report",
+      "label": "Minimal Todo App test report",
+      "degree": 4
+    },
+    {
+      "id": "ref_react",
+      "label": "react",
+      "degree": 3
+    },
+    {
+      "id": "ref_testing_library_react",
+      "label": "@testing-library/react",
+      "degree": 3
+    },
+    {
+      "id": "codebase_readme_minimal_todo_app",
+      "label": "Minimal Todo App",
+      "degree": 3
+    },
+    {
+      "id": "codebase_readme_react_memory_session_state",
+      "label": "In-memory session task state",
+      "degree": 3
+    },
+    {
+      "id": "ref_vitejs_plugin_react",
+      "label": "@vitejs/plugin-react",
+      "degree": 2
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Todo App — Small steps, clearly seen",
+      "target": "Minimal Todo App",
+      "source_files": [
+        "frontend/index.html",
+        "README.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "Component behavior tests",
+      "target": "In-memory session task state",
+      "source_files": [
+        "test_report.yaml",
+        "README.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
